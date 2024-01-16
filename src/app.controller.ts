@@ -10,4 +10,10 @@ export class AppController {
   main() {
     return { title: 'Home Page' }; // Pass data to the template
   }
+
+  @Get('live')
+  @Render('livePage') // Render the 'main' EJS template
+  live() {
+    return { title: 'Live Page' }; // Pass data to the template
+  }
 }
