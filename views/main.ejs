@@ -15,89 +15,20 @@
       referrerpolicy="no-referrer"
     />
     <title><%= title %></title>
-    <link rel="stylesheet" href="/styles/common.css" />
-    <style>
-      /* HEADER */
-      .headerWrap {
-        font-size: 25px;
-        padding: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .menuAndLogoWrap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .menuBtnWrap {
-        margin-right: 20px;
-      }
-      input {
-        background-color: #141517;
-        color: #9da5b6;
-        border-radius: 10px;
-      }
-      /* MAIN */
-      main {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 50px;
-        font-size: 20px;
-      }
-      /* GNB */
-      .gnbBox {
-        width: 20%;
-      }
-      /* SECTION */
-      .sectionBox {
-        width: 80%;
-      }
-      section {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-right: 30px;
-      }
-      .videoBox {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 30%;
-        height: 330px;
-        padding: 100px;
-        border: 1px solid #9da5b6;
-        margin-bottom: 50px;
-      }
-      /* FOOTER */
-      .memberWrap {
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .meber {
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles/common.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <div class="headerBox"><%- include('header.ejs') %></div>
+    <div class="headerBox"><%- include('./modules/header.ejs') %></div>
 
     <main>
       <!-- GNB -->
-      <div class="gnbBox"><%- include('gnb.ejs') %></div>
+      <div class="gnbBox"><%- include('./modules/sideBar.ejs') %></div>
 
       <!-- SECTION -->
-      <div class="sectionBox"><%- include('section.ejs') %></div>
+      <div class="sectionBox"><%- include('./modules/section.ejs') %></div>
     </main>
     <!-- FOOTER -->
-    <div class="footerBox"><%- include('footer.ejs') %></div>
+    <div class="footerBox"><%- include('./modules/footer.ejs') %></div>
   </body>
 </html>
