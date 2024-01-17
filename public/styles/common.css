@@ -98,13 +98,63 @@ input::placeholder {
   width: 100%;
 }
 
-.loginWrap {
-  width: 180px;
+.userBtnWrap {
+  width: 300px;
   height: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+.userBtnWrap > div {
+  margin-right: 20px;
+}
+
+.logoutBtn {
+  width: 110px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 18px;
+  line-height: 2.5;
+  text-align: center;
+}
+
+.myInfoBtn {
+  width: 110px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 18px;
+  line-height: 2.5;
+  text-align: center;
+}
+
+.myNotificationBtn {
+  width: 90px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 18px;
+  line-height: 2.5;
+  text-align: center;
+}
+
+.dropdown-menu {
+  width: 400px;
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+.dropdown-menu > li {
+
+  background-color:#032d3cbd;
+  border-radius: 10px;
+  margin-top: 15px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-left: 10px;
 }
 
 .loginBtn {
@@ -125,7 +175,7 @@ input::placeholder {
   height: 180px;
   padding-top: 20px;
   margin-bottom: 20px;
-  color: #faef9b;
+  color: #F7FF56;
   font-weight: 600;
   font-size: 90px;
 }
@@ -187,7 +237,7 @@ main {
   height: 40px;
   overflow: hidden;
   margin-right: 15px;
-  border: 2px solid #faef9b;
+  border: 2px solid #F7FF56;
   border-radius: 50%;
 }
 .sidebarViews {
@@ -245,6 +295,7 @@ section {
 /* FOOTER */
 .memberWrap {
   font-size: 20px;
+  margin-left: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -287,8 +338,66 @@ section {
 
 .videoSetting {
   border-top: 1px solid white;
+  padding-top: 10px;
   width: 100%;
   height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setting1 {
+  width: 23%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+}
+.setting1 > div {
+  align-items: center;
+  height: 80%;
+}
+.setting1 > div > img {
+  width: 35px;
+  height: 35px;
+}
+.liveSign {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.801);
+}
+.setting2 {
+  width: 9.5%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25px;
+}
+.setting2 > div {
+  align-items: center;
+  height: 80%;
+}
+
+.settingBtn {
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.wideBtn {
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 13px;
 }
 
 .liveStreamerInfo {
@@ -322,7 +431,7 @@ section {
   width: 80%;
   height: 80%;
   border-radius: 50%;
-  border: 2px solid #faef9b;
+  border: 2px solid #F7FF56;
 }
 .streamerInfoDetail {
   display: flex;
@@ -343,7 +452,7 @@ section {
   height: 20%;
   font-size: 25px;
   font-weight: 600;
-  color: #faef9b;
+  color: #F7FF56;
 }
 .streamInfo {
   display: flex;
@@ -357,8 +466,159 @@ section {
 .liveChatBox {
   background-color: #292a2e;
   width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatTitle {
+  border: 0.2px solid #9da5b631;
+  height: 5%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.857);
+}
+
+.chatMain {
+  border: 0.2px solid #9da5b631;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chatBox {
+  margin-top: 10px;
+  /* border: 0.2px solid #9da5b631; */
+  width: 90%;
+  height: 90%;
+}
+
+.chatInput {
+  width: 90%;
+  height: 10%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.chatInput > input {
+  padding-left: 20px;
+}
+
+#chatInput {
+  width: 100%;
+  height: 62px;
+  background-color: #1b1b1d;
+  border: none;
+  border-radius: 20px;
+}
+
+.chatList {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chatNickname {
+  color: #F7FF56;
+  font-weight: 500;
+  margin-right: 20px;
 }
 
 .spacelLeft {
+  color: white;
+  font-weight: 300;
   margin-left: 20px;
+}
+
+/* myPage */
+
+.InfoMainBox {
+  background-color: #F7FF56;
+  border-radius: 10px;
+  width: 1800px;
+  height: 1110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.channelInfoContainer {
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 20%;
+}
+
+.channelInfoImg {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  border: 10px solid rgba(0, 0, 0, 0.448);
+}
+
+.channelInfoImg > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.infoEtc {
+  margin-left: 5px;
+  font-weight: 500;
+}
+.myChannelInfoDetail {
+  color: black;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.myChannelNickname {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.859);
+}
+.myChannelInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.startLiveBtn,
+.channelSettingBtn {
+  width: 120px;
+  height: 43px;
+  text-align: center;
+  align-items: center;
+  border: 3px solid rgba(0, 0, 0, 0.61);
+  border-radius: 20px;
+  color: black;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.homeBox {
+  border: 3px solid rgba(0, 0, 0, 0.236);
+  border-radius: 10px;
+  width: 90%;
+  height: 70%;
+  text-align: center;
+  color: black;
+  line-height: 15;
+  font-size: 3rem;
 }
