@@ -16,4 +16,10 @@ export class AppController {
   live() {
     return { title: 'Live Page' }; // Pass data to the template
   }
+
+  @Get('my-page')
+  @Render('channelInfo') // Render the 'main' EJS template
+  myInfo() {
+    return { title: 'My Page' }; // Pass data to the template
+  }
 }
